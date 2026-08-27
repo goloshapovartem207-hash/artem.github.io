@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Я тебя люблю</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fdfbf7;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 600px;
+        padding: 2rem;
+        text-align: center;
+      }
+      h1 { color: #d63384; }
+      p { line-height: 1.6; }
+      button {
+        background: #d63384;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      button:hover { background: #b02a6a; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Есть кое‑что важное…</h1>
+      <p>Ты делаешь обычные дни особенными. Мне нравится, как ты смеёшься, как рассказываешь истории, как даже в пасмурный день умеешь всё сделать светлее.</p>
+      <p>Я долго подбирал слова, а потом понял: самые простые — самые честные.</p>
+      <button onclick="reveal()">Нажми сюда</button>
+      <div id="secret" style="margin-top:20px; font-size:1.2em; display:none;">
+        ❤️ Я тебя люблю. И хочу быть рядом. ❤️
+      </div>
+    </div>
+
+    <script>
+      function reveal() {
+        document.getElementById('secret').style.display = 'block';
+      }
+    </script>
+  </body>
+</html>
